@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      names="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="stylesheet" href="./assets/default.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/main.js" type="module"></script>
+    <title>Well Played Web Play</title>
+  </head>
+  <body id='loading'>
+    <div class="loading-container">
+      <span class="loading"></span>
+    </div>
+    <div class="close-main">✕</div>
+    <div class='about'>About wpwp project</div>
+    <div class='about-modal'>
+      <div class="modal-wrapper">
+        <div class="modal-container">
+          <div class="modal-head">
+            Well Played Web Play
+          </div>
+          <div class="modal-body">
+            This project is a step for being interactive developer.<br>
+            <span class='ref'>I really inspired from <a href='https://www.youtube.com/channel/UCdeWxKJuvtUG2xyN6pOJEvA'>Jogmin Kim</a> and <a href="https://www.youtube.com/c/1%EB%B6%84%EC%BD%94%EB%94%A9">Studiomeal(1분 코딩)</a>.</span>
+            <br>
+            <br>
+            I used css 3D skills to make my webpage 3D which react from user's scroll.
+            And most of this project's content is made with html canvas with js that makes content more beautiful and interactive.
+            Also, there are two projects that I made in army where I have few leisure time, these are also make me take a step for being interactive developer.
+            <br>
+            And I thought it was all playing for me to care user intearction and make canvas animation, and even the project that I made in army.
+            So I decided to name this project to 'Wpwp' which means 'Well played web play'.
+          </div>
+          <div class="modal-link">
+            If you want to contact me check out my:
+            <ul>
+              <a href="https://www.linkedin.com/in/actav/"><li>LinkedIn</li></a>
+              <span>﹒</span>
+              <a href="https://twitter.com/actav5108"><li>Twitter</li></a>
+              <span>﹒</span>
+              <a href="mailto:dltmdwns0721@kakao.com"><li>Email</li></a>
+            </ul>
+          </div>
+          <div class="modal-copyright">
+            Copyright &copy; 2021 SeungJun Lee. All rights reserved
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-canvas"></div>
+    <article class="article">
+      <div class="panels-list">
+        <div class="panels panels-1">
+          <div class="panel-list">
+            <div
+              class="panel"
+              data-project-index="0"
+              data-section-index="0"
+              id="hello-canvas-con"
+            ></div>
+            <div
+              class="panel"
+              data-project-index="1"
+              data-section-index="0"
+              id="hangang"
+            ></div>
+            <div
+              class="panel"
+              data-project-index="2"
+              data-section-index="0"
+              id="moon"
+            ></div>
+            <div
+              class="panel"
+              data-project-index="3"
+              data-section-index="0"
+              id="particle-3d"
+            ></div>
+            <div
+              class="panel"
+              data-project-index="4"
+              data-section-index="0"
+              id="actav-text"
+            ></div>
+            <div
+              class="panel"
+              data-project-index="5"
+              data-section-index="0"
+              id='ripple'
+            ></div>
+            <div
+              class="panel"
+              data-project-index="6"
+              data-section-index="0"
+              id='qna'
+            ></div>
+          </div>
+        </div>
+        <div class="panels panels-2">
+          <div class="panel-list">
+            <div
+              class="panel"
+              data-project-index="0"
+              data-section-index="1"
+              id='hello-event'
+            ></div>
+            <div
+              class="panel"
+              data-project-index="1"
+              data-section-index="1"
+              id='mimetic-word'
+            ></div>
+            <div
+              class="panel"
+              data-project-index="2"
+              data-section-index="1"
+              id='sun'
+            ></div>
+            <div
+              class="panel"
+              data-project-index="3"
+              data-section-index="1"
+              id='particle-upgrade'
+            ></div>
+            <div
+              class="panel"
+              data-project-index="4"
+              data-section-index="1"
+              id='actav-event'
+            ></div>
+            <div
+              class="panel"
+              data-project-index="5"
+              data-section-index="1"
+              id='skimming-stone'
+            ></div>
+            <div
+              class="panel"
+              data-project-index="6"
+              data-section-index="1"
+              id='faq'
+            ></div>
+          </div>
+        </div>
+        <div class="panels panels-3">
+          <div class="panel-list">
+            <div
+              class="panel panel-image"
+              data-project-index="0"
+              data-section-index="2"
+              style="background-image:url(./assets/image/ramble.png)"
+            >
+            </div>
+            <div
+              class="panel panel-image"
+              data-project-index="1"
+              data-section-index="2"
+              style="background-image:url(./assets/image/marathon.png)"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <section class="section section-first">
+        <div class="width-setter section-main">
+          <div class="section-intro">
+            <div class="section-title observe-1">
+              <h1 class="index-num">01</h1>
+              <h3 class="wp">Well Played</h3>
+              <h2>Canvas!🎨</h2>
+            </div>
+            <div class="section-desc">
+              <p>
+                First section of
+                <span class="bold">well played web play</span> is
+                <span class="bold">Canvas</span> which is played at html canvas
+                element.
+              </p>
+            </div>
+          </div>
+          <div class="projects particle-projects">
+            <div class="observe-start observe-1"></div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Canvas 01</h1>
+                <h2>Hello, Canvas!</h2>
+              </div>
+              <div class="project-desc observe-1" data-project-index="0">
+                Hello! My fisrt canvas!<br />
+                This project is <span class="bold">just for being familiar</span> to
+                canvas project.
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to="hello-canvas-con">
+                  Launch
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Canvas 02</h1>
+                <h2>Hangang</h2>
+              </div>
+              <div class="project-desc observe-1" data-project-index="1">
+                When it's shinny day, it makes me feel wanna ride a bike along the hangang's riverside.🚲<br>With the
+                music <span class="bold">'Ride' by Sole, 'Hangang' by The Quiett</span>
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to="hangang">Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Canvas 03</h1>
+                <h2>Moon🌕</h2>
+              </div>
+              <div class="project-desc observe-1" data-project-index="2">
+                Different place, <span class="bold">same</span> sky.<br />
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to="moon">Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Canvas 04</h1>
+                <h2>3D Particles</h2>
+              </div>
+              <div class="project-desc observe-1" data-project-index="3">
+                Sometimes, just moving particles make me feel in 3D space.
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to="particle-3d">Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Canvas 05</h1>
+                <h2>ActaV</h2>
+              </div>
+              <div class="project-desc observe-1" data-project-index="4">
+                This is <span class='bold'>ActaV</span> with particles!
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to="actav-text">
+                  Launch
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Canvas 06</h1>
+                <h2>Ripple💧</h2>
+              </div>
+              <div class="project-desc observe-1" data-project-index="5">
+                When it's too silent, <span class='bold'>ripple sound</span> makes me feel alive.
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='ripple'>Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Canvas 07</h1>
+                <h2>QnA</h2>
+              </div>
+              <div class="project-desc observe-1" data-project-index="6">
+                Lots of <span class='bold'>QUESTIONS</span> will make lots of <span class='bold'>ANSWERS</span>
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='qna'>Launch</button>
+              </div>
+            </div>
+            <div
+              class="observe-end observe observe-1"
+              data-section-index="0"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-second">
+        <div class="width-setter section-main">
+          <div class="section-intro">
+            <div class="section-title observe-2">
+              <h1 class="index-num">02</h1>
+              <h3 class="wp">Well Played</h3>
+              <h2>Events!🕺</h2>
+            </div>
+            <div class="section-desc">
+              <p>
+                Second section of
+                <span class="bold">well played web play</span> is upgrade
+                versions of Canvas section with special
+                <span class="bold">Events</span> with mouse.
+              </p>
+            </div>
+          </div>
+          <div
+            class="observe-start observe observe-2"
+            data-section-index="1"
+          ></div>
+          <div class="projects event-projects">
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Event 01</h1>
+                <h2>Hello, Event!</h2>
+              </div>
+              <div class="project-desc observe-2" data-project-index="0">
+                Let's get used to the various events like <span class='bold'>CLICK</span> or <span class='bold'>MOUSE MOVE</span> in canvas!
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='hello-event'>Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Event 02</h1>
+                <h2>Mimetic words of event🖱</h2>
+              </div>
+              <div class="project-desc observe-2" data-project-index="1">
+                Do you know how to say mouse events in mimetic words?<br>(Click or move the mouse)
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='mimetic-word'>Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Event 03</h1>
+                <h2>Sun☀️</h2>
+              </div>
+              <div class="project-desc observe-2" data-project-index="2">
+                Make me bright. Make my shadow.<br>(Drag the box)
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='sun'>Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Event 04</h1>
+                <h2>3D particles(Upgrade)</h2>
+              </div>
+              <div class="project-desc observe-2" data-project-index="3">
+                You must have seen '3D particles' in Section1!<br>
+                And here is the <span class='bold'>upgrade version</span> of that.(DRAG)
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='particle-upgrade'>Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Event 05</h1>
+                <h2>ActaV with Event</h2>
+              </div>
+              <div class="project-desc observe-2" data-project-index="4">
+                This is <span class='bold'>ActaV</span> with particles and events!(Mouse move)
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='actav-event'>Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Event 06</h1>
+                <h2>Skimming Stone🪨</h2>
+              </div>
+              <div class="project-desc observe-2" data-project-index="5">
+                Your mouse is <span class='bold'>stone</span> now. Throw your stone!😃(Mouse move)
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='skimming-stone'>Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Event 07</h1>
+                <h2>FAQ</h2>
+              </div>
+              <div class="project-desc observe-2" data-project-index="6">
+                Frequently asked questions will clear your overloaded head.<br>
+                (Click or Drag the circle)
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch" data-to='faq'>Launch</button>
+              </div>
+            </div>
+            <div
+              class="observe-end observe observe-2"
+              data-section-index="1"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-third">
+        <div class="width-setter section-main">
+          <div class="section-intro">
+            <div class="section-title observe-3">
+              <h1 class="index-num">03</h1>
+              <h3 class="wp">Well Played</h3>
+              <h2>Project!</h2>
+            </div>
+            <div class="section-desc">
+              <p>
+                Third section of
+                <span class="bold">well played web play</span> is special projects!
+                <br>Which both were completed when I'm having my own leisure time in army!
+              </p>
+            </div>
+          </div>
+          <div
+            class="observe-start observe observe-3"
+            data-section-index="2"
+          ></div>
+          <div class="projects project-projects">
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Project 01</h1>
+                <h2>Ramble!</h2>
+              </div>
+              <div class="project-desc observe-3" data-project-index="0">
+                My first 3D project! This project make me feel like being artist!
+                <br><span class='bold'>Recommend to watch in PC</span>
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch btn-url" data-to='https://ramble.actav.be'>Launch</button>
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-title">
+                <h1 class="index-num">Project 02</h1>
+                <h2>Life, Marathon!</h2>
+              </div>
+              <div class="project-desc observe-3" data-project-index="1">
+                I wanted to implement fancy scroll animation web site with <a href='https://www.youtube.com/watch?v=kaKQHsUM3Po' target='_blank'>an advertisement</a> that I really impressed.
+                <br>
+                <br>
+                And this is it.
+              </div>
+              <div class="btn-container">
+                <button class="btn-launch btn-url" data-to='https://marathon.actav.be'>Launch</button>
+              </div>
+            </div>
+            <div
+              class="observe-end observe observe-3"
+              data-section-index="2"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>
