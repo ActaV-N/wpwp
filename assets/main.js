@@ -130,9 +130,6 @@ const setElems = () => {
         this.panelListElem.style.transform = `translate3d(${
           this.panelDist
         }px, 0, 0) rotateZ(${-this.panelAngle * this.currentIndex}deg)`;
-        // this.panelListElem.style.transform = `rotateZ(${
-        //   -this.panelAngle * this.currentIndex
-        // }deg)`;
       },
       activate: function () {
         if (this.currentIndex !== null) {
@@ -276,11 +273,13 @@ const init = () => {
   document.body.setAttribute('id','load-end');
   if(loadingContainerElem){
     loadingContainerElem.addEventListener('transitionend', function(){
-      document.body.removeChild(loadingContainerElem);
-      document.body.setAttribute('id','')
-    })
+      // Check if the loading container is still a child of document.body before removing
+      if (loadingContainerElem && loadingContainerElem.parentNode === document.body) {
+        document.body.removeChild(loadingContainerElem);
+        document.body.setAttribute('id','');
+      }
+    });
   }
-
 
   // Observer for section 1
   const firstIO = new IntersectionObserver((entries, observer) => {
@@ -485,7 +484,6 @@ function setScrollRatio() {
     0,
     scrollRatio * sectionInfo[0].panelsElem.clientHeight
   );
-
 }
 
 const scrollHandler = () => {
